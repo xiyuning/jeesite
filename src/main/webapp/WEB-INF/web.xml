@@ -15,7 +15,7 @@
 		<listener-class>com.thinkgem.jeesite.modules.sys.listener.WebContextListener</listener-class>
 	</listener>
 	<listener>
-        <listener-class>org.springframework.web.context.request.RequestContextListener</listener-class>  
+        <listener-class>org.springframework.web.context.request.RequestContextListener</listener-class>
 	</listener>
 	<filter>
 		<filter-name>encodingFilter</filter-name>
@@ -33,7 +33,7 @@
 		<filter-name>encodingFilter</filter-name>
 		<url-pattern>/*</url-pattern>
 	</filter-mapping>
-	
+
 	<!-- Apache Shiro -->
 	<filter>
 		<filter-name>shiroFilter</filter-name>
@@ -79,7 +79,7 @@
 		<filter-name>sitemeshFilter</filter-name>
 		<url-pattern>/f/*</url-pattern>
 	</filter-mapping>
-	
+
 	<!-- MVC Servlet -->
 	<servlet>
 		<servlet-name>springServlet</servlet-name>
@@ -95,16 +95,6 @@
 		<url-pattern>/</url-pattern>
 	</servlet-mapping>
 
-	<!-- Activiti diagram-view callback filter-->
-	<filter>
-		<filter-name>JSONPFilter</filter-name>
-		<filter-class>com.thinkgem.jeesite.modules.act.rest.servlet.JsonpCallbackFilter</filter-class>
-	</filter>
-	<filter-mapping>
-		<filter-name>JSONPFilter</filter-name>
-		<url-pattern>/act/service/*</url-pattern>
-	</filter-mapping>
-
 	<!-- DruidStatView -->
 	<servlet>
 		<servlet-name>DruidStatView</servlet-name>
@@ -118,7 +108,7 @@
 		<servlet-name>DruidStatView</servlet-name>
 		<url-pattern>/druid/*</url-pattern>
 	</servlet-mapping>
-	
+
 	<!-- CKFinder -->
 	<servlet>
 		<servlet-name>CKFinderConnectorServlet</servlet-name>
@@ -167,7 +157,7 @@
 	  	<servlet-name>UserfilesDownloadServlet</servlet-name>
 	  	<url-pattern>/userfiles/*</url-pattern>
 	</servlet-mapping>
-	
+
 	<!-- Validate code -->
 	<servlet>
 		<servlet-name>ValidateCodeServlet</servlet-name>
@@ -177,8 +167,8 @@
 		<servlet-name>ValidateCodeServlet</servlet-name>
 		<url-pattern>/servlet/validateCodeServlet</url-pattern>
 	</servlet-mapping>
-	
-	<!-- FineReport 
+
+	<!-- FineReport
 	<servlet>
 		<servlet-name>ReportServer</servlet-name>
 		<servlet-class>com.fr.web.ReportServlet</servlet-class>
@@ -187,7 +177,7 @@
 		<servlet-name>ReportServer</servlet-name>
 		<url-pattern>/ReportServer</url-pattern>
 	</servlet-mapping>-->
-	
+
 	<!-- [INSERT FRAGMENT HERE] -->
 
 	<!-- Session configure, to "jeesite.properties" file "session.sessionTimeout" parameter.
